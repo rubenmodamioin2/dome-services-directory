@@ -1,0 +1,23 @@
+clients:
+    - clientId: "did:key:zDnaeeZ66JBhk2h6s1yrAwh2QUHUu8o3npP2mcb2kW8PYqj9Y"
+      redirectUris: []
+      scopes: []
+      clientAuthenticationMethods: ["client_secret_jwt"]
+      authorizationGrantTypes: ["client_credentials"]
+      postLogoutRedirectUris: []
+      requireAuthorizationConsent: false
+      requireProofKey: false
+      jwkSetUrl: "http://localhost:9000/oidc/did/did:key:zDnaeeZ66JBhk2h6s1yrAwh2QUHUu8o3npP2mcb2kW8PYqj9Y"
+      tokenEndpointAuthenticationSigningAlgorithm: "ES256"
+
+    - clientId: "did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
+      id: "1234"
+      redirectUris: ["http://localhost:8081/cb"]
+      scopes: ["openid_learcredential"]
+      clientAuthenticationMethods: ["client_secret_jwt"]
+      authorizationGrantTypes: ["authorization_code"]
+      postLogoutRedirectUris: ["http://localhost:8081/cb"]
+      requireAuthorizationConsent: false
+      requireProofKey: false
+      jwkSetUrl: "http://localhost:9000/oidc/did/did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
+      tokenEndpointAuthenticationSigningAlgorithm: "ES256"
