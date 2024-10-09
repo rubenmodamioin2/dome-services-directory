@@ -1,6 +1,6 @@
 clients:
-    - clientId: "did:key:zDnaeZfUaoq9MzpUTLWieZrTkcvFozdcpVuo14Xp2eM2AQNTq"
-      id: "did:key:zDnaeZfUaoq9MzpUTLWieZrTkcvFozdcpVuo14Xp2eM2AQNTq"
+    - clientId: "did:key:zDnaedohLFuQf1iPsJBDXyF7f2V5yzzPiCNitMBvCjBJY8Xbe"
+      id: "did:key:zDnaedohLFuQf1iPsJBDXyF7f2V5yzzPiCNitMBvCjBJY8Xbe"
       redirectUris: [ "https://dome-marketplace-sbx.org/auth/vc/callback" ]
       scopes: [ "openid_learcredential" ]
       clientAuthenticationMethods: [ "client_secret_jwt" ]
@@ -8,5 +8,5 @@ clients:
       postLogoutRedirectUris: [ "https://dome-marketplace-sbx.org/" ]
       requireAuthorizationConsent: false
       requireProofKey: false
-      jwkSetUrl: "https://verifier.dome-marketplace-sbx.org/oidc/did/did:key:zDnaeZfUaoq9MzpUTLWieZrTkcvFozdcpVuo14Xp2eM2AQNTq"
+      jwkSetUrl: "https://verifier.dome-marketplace-sbx.org/oidc/did/did:key:zDnaedohLFuQf1iPsJBDXyF7f2V5yzzPiCNitMBvCjBJY8Xbe"
       tokenEndpointAuthenticationSigningAlgorithm: "ES256"
