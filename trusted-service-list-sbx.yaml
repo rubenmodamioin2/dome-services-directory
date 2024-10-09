@@ -1,11 +1,12 @@
-#clients:
-#    - clientId: ""
-#      redirectUris: []
-#      scopes: []
-#      clientAuthenticationMethods: ""
-#      authorizationGrantTypes: ""
-#      postLogoutRedirectUris: []
-#      requireAuthorizationConsent: false
-#      requireProofKey: false
-#      jwkSetUrl: ""
-#      tokenEndpointAuthenticationSigningAlgorithm: ""
+clients:
+    - clientId: "did:key:zDnaeZfUaoq9MzpUTLWieZrTkcvFozdcpVuo14Xp2eM2AQNTq"
+      id: "did:key:zDnaeZfUaoq9MzpUTLWieZrTkcvFozdcpVuo14Xp2eM2AQNTq"
+      redirectUris: [ "https://dome-marketplace-sbx.org/auth/vc/callback" ]
+      scopes: [ "openid_learcredential" ]
+      clientAuthenticationMethods: [ "client_secret_jwt" ]
+      authorizationGrantTypes: [ "authorization_code" ]
+      postLogoutRedirectUris: [ "https://dome-marketplace-sbx.org/" ]
+      requireAuthorizationConsent: false
+      requireProofKey: false
+      jwkSetUrl: "https://verifier.dome-marketplace-sbx.org/oidc/did/did:key:zDnaeZfUaoq9MzpUTLWieZrTkcvFozdcpVuo14Xp2eM2AQNTq"
+      tokenEndpointAuthenticationSigningAlgorithm: "ES256"
