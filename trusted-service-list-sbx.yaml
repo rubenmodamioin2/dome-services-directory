@@ -18,5 +18,5 @@ clients:
       postLogoutRedirectUris: []
       requireAuthorizationConsent: false
       requireProofKey: false
-      jwkSetUrl: "https://verifier.dome-marketplace-lcl.org/oidc/did/did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
+      jwkSetUrl: "https://verifier.dome-marketplace-sbx.org/oidc/did/did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
       tokenEndpointAuthenticationSigningAlgorithm: "ES256"
