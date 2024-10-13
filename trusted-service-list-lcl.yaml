@@ -10,16 +10,16 @@ clients:
       jwkSetUrl: "https://verifier.dome-marketplace-lcl.org/oidc/did/did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
       tokenEndpointAuthenticationSigningAlgorithm: "ES256"
 
-    - clientId: "did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
+    - clientId: "keycloak"
       id: "1234"
-      redirectUris: ["http://localhost:8081/cb"]
+      redirectUris: ["http://localhost:7002/realms/wallet/broker/oidc/endpoint"]
       scopes: ["openid_learcredential"]
       clientAuthenticationMethods: ["client_secret_jwt"]
       authorizationGrantTypes: ["authorization_code"]
-      postLogoutRedirectUris: ["http://localhost:8081/cb"]
+      postLogoutRedirectUris: ["http://localhost:7002"]
       requireAuthorizationConsent: false
       requireProofKey: false
-      jwkSetUrl: "https://verifier.dome-marketplace-lcl.org/oidc/did/did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
+      jwkSetUrl: "http://localhost:7002/realms/wallet/protocol/openid-connect/certs"
       tokenEndpointAuthenticationSigningAlgorithm: "ES256"
     
     - clientId: "did:key:zDnaefwMbENtpCoCCdYgFLKJCuVtkGZ8PhEg7gWAYBeeKAyuy"
