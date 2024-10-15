@@ -12,14 +12,14 @@ clients:
 
     - clientId: "keycloak"
       id: "1234"
-      redirectUris: ["http://localhost:7002/realms/wallet/broker/oidc/endpoint"]
+      redirectUris: ["https://localhost:8443/realms/CredentialIssuer/broker/oidc/endpoint"]
       scopes: ["openid_learcredential"]
       clientAuthenticationMethods: ["client_secret_jwt"]
       authorizationGrantTypes: ["authorization_code"]
-      postLogoutRedirectUris: ["http://localhost:7002"]
+      postLogoutRedirectUris: ["https://localhost:8443"]
       requireAuthorizationConsent: false
       requireProofKey: false
-      jwkSetUrl: "http://localhost:7002/realms/wallet/protocol/openid-connect/certs"
+      jwkSetUrl: "https://localhost:8443/realms/CredentialIssuer/protocol/openid-connect/certs"
       tokenEndpointAuthenticationSigningAlgorithm: "ES256"
     
     - clientId: "did:key:zDnaefwMbENtpCoCCdYgFLKJCuVtkGZ8PhEg7gWAYBeeKAyuy"
